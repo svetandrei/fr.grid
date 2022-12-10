@@ -5,7 +5,9 @@
 }
 html, body {
   box-sizing: border-box;
-  height: 100%;
+}
+p {
+  margin: 0;
 }
 .list-reset {
   padding: 0;
