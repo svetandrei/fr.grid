@@ -45,6 +45,10 @@
   --yellow-color-active: #A47312;
 }
 
+:focus {
+  outline: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -192,6 +196,9 @@ img {
   text-decoration: none;
   transition: color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
 }
+.link-effect {
+  transition: color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+}
 .header__personal-account svg {
   margin-right: 5px;
 }
@@ -205,20 +212,23 @@ img {
 .header__phone:hover {
   color: #CC9933;
 }
-.header__personal-account:hover {
+.header__personal-account:hover,
+.link-effect:hover {
   color: var(--yellow-color-light);
 }
 .header__personal-account:hover svg path {
   fill: var(--yellow-color-light);
 }
 .header__phone:focus,
-.header__personal-account:focus {
+.header__personal-account:focus,
+.link-effect:focus {
   outline: 1px solid #CC9933;
   outline-offset: 5px;
   color: #CC9933;
 }
 .header__phone:active,
-.header__personal-account:active {
+.header__personal-account:active,
+.link-effect:active {
   color: var(--yellow-color-active);
 }
 .header__personal-account:active svg path {
@@ -720,8 +730,10 @@ input[type="number"] {
   max-width: 300px;
   width: 100%;
 }
-.footer__col, .footer__address {
+.footer__col,
+.footer__address {
   flex-direction: column;
+  align-items: flex-start;
 }
 .footer__social {
   flex-grow: 1;
