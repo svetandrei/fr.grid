@@ -66,9 +66,9 @@
       </form>
     </div>
 </header>
-<main class="main ">
+<main class="main">
   <div class="container">
-    <section class="cover indents">
+    <section class="cover">
       <div class="cover__content display-flex">
         <h1 class="cover__title">
           Проектные решения любой сложности
@@ -81,14 +81,11 @@
         </button>
       </div>
       <ul class="cover__slides list-reset">
-        <li class="cover__slide">
-          <img src="images/slides/slide_1.png" alt="Проектные решения любой сложности" class="cover__image">
+        <li class="cover__slide" style="background: url('images/slides/slide_1.png') no-repeat center / cover">
         </li>
-        <li class="cover__slide hide">
-          <img src="images/slides/slide_2.png" alt="Проектные решения любой сложности" class="cover__image">
+        <li class="cover__slide hide" style="background: url('images/slides/slide_2.png') no-repeat center / cover">
         </li>
-        <li class="cover__slide hide">
-          <img src="images/slides/slide_3.png" alt="Проектные решения любой сложности" class="cover__image">
+        <li class="cover__slide hide" style="background: url('images/slides/slide_2.png') no-repeat center / cover">
         </li>
       </ul>
       <ul class="cover__controls display-flex controls list-reset">
@@ -146,22 +143,22 @@
         <ul class="tabs__list display-flex list-reset">
           <li class="tabs__item active">
             <a href="#step_1" class="tabs__link">
-              Шаг 1
+              1 шаг
             </a>
           </li>
           <li class="tabs__item">
             <a href="#step_2" class="tabs__link">
-              Шаг 2
+              2 шаг
             </a>
           </li>
           <li class="tabs__item">
             <a href="#step_3" class="tabs__link">
-              Шаг 3
+              3 шаг
             </a>
           </li>
           <li class="tabs__item">
             <a href="#step_4" class="tabs__link">
-              Шаг 4
+              4 шаг
             </a>
           </li>
         </ul>
@@ -175,7 +172,7 @@
                   А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
                 </p>
               </div>
-              <div class="tabs__buttons">
+              <div class="tabs__buttons display-flex">
                 <button class="tabs__btn btn btn-orange btn-reset">Подробнее</button>
                 <button class="tabs__btn btn btn-line btn-reset">Договор</button>
               </div>
@@ -265,7 +262,7 @@
   </div>
 </main>
     <footer class="footer section display-flex">
-      <div class="footer__col display-flex">
+      <div class="footer__col footer__left display-flex">
         <img src="images/footer_logo.svg" alt="" class="footer__logo">
         <nav class="footer__nav nav" title="Secondary menu">
           <ul class="nav__list list-reset display-flex">
@@ -303,7 +300,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__col">
+      <div class="footer__col footer__form">
         <h2 class="footer__title section__title">Оставить заявку</h2>
         <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form" >
             <input class="form__input" type="text" name="name" placeholder="Фамилия, имя и&nbsp;отчество*" required>

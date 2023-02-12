@@ -52,13 +52,12 @@ img {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 16px;
-  padding: 20px 38px;
+  padding: 19px 38px;
   font-size: 16px;
-  line-height: 20px;
   font-weight: 700;
 }
 .tabs__buttons .btn-orange {
-  margin-right: 32px;
+  margin-right: 30px;
 }
 .btn-orange {
   border-color: var(--orange-color);
@@ -104,7 +103,7 @@ img {
 }
 .section__title {
   font-size: 48px;
-  line-height: 58px;
+  line-height: 60px;
   font-weight: 400;
 }
 .hide {
@@ -123,10 +122,10 @@ img {
 }
 .header__logo {
   font-size: 0;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 .header__nav {
-  margin-right: 260px;
+  flex-grow: 1;
 }
 .nav__menu {
   height: 100%;
@@ -285,13 +284,25 @@ img {
 .cover {
   position: relative;
   line-height: 0;
+  margin-bottom: 50px;
+}
+.cover__slides {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  border-radius: 32px;
+  overflow: hidden;
 }
 .cover__slide {
   position: relative;
+  height: 100%;
 }
 .cover__content {
-  position: absolute;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
   top: 0;
   left: 0;
   padding: 100px 80px;
@@ -312,7 +323,8 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  flex: 1 1 auto;
+  /*flex: 1 1 auto;*/
+  margin-bottom: 90px;
 }
 .cover__btn {
   line-height: 28px;
@@ -325,7 +337,7 @@ img {
   left: 0;
   right: 0;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
   justify-content: center;
   margin-bottom: 30px;
 }
@@ -348,7 +360,8 @@ img {
   margin-bottom: 20px;
 }
 .about__desc {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  max-width: 1235px;
 }
 .about__left {
   line-height: 0;
@@ -400,7 +413,7 @@ img {
   padding: 65px 105px 65px 300px;
 }
 .about__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .about__icon-1 {
   background: url("../images/about_icon_1.svg") no-repeat 60px center;
@@ -592,6 +605,12 @@ img {
   background: var(--dark-color);
   justify-content: space-between;
 }
+.footer__left {
+  flex-grow: 1.5;
+}
+.footer__form {
+  flex-grow: 1;
+}
 .footer__flex {
   height:100%;
   align-items: center;
@@ -601,6 +620,7 @@ img {
   margin-bottom: 25px;
 }
 .footer__logo {
+  max-width: 225px;
   margin-bottom: 20px;
 }
 .footer__col {
@@ -613,7 +633,7 @@ img {
   color: #CACACA;
   font-size: 18px;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 36px;
   outline: none;
   transition: color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
 }
