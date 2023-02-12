@@ -122,8 +122,8 @@ img {
   margin-bottom: 50px;
 }
 .header__logo {
-  width: 225px;
   font-size: 0;
+  flex-grow: 1;
 }
 .header__nav {
   margin-right: 260px;
@@ -181,6 +181,7 @@ img {
 .header__search {
   position: relative;
   width: 24px;
+  height: 24px;
 }
 .search__form {
   position: absolute;
@@ -285,7 +286,7 @@ img {
   position: relative;
   line-height: 0;
 }
-.cover__item {
+.cover__slide {
   position: relative;
 }
 .cover__content {
@@ -293,8 +294,8 @@ img {
   z-index: 1;
   top: 0;
   left: 0;
-  padding: 100px 0 100px 80px;
-  max-width: 920px;
+  padding: 100px 80px;
+  max-width: 1020px;
   flex-direction: column;
   align-items: flex-start;
   height: 100%;
@@ -457,15 +458,20 @@ img {
 .tabs__content {
   clear: both;
 }
+.tabs__content-left {
+  margin-right: 142px;
+  flex-direction: column;
+}
 .tabs__title {
   margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tabs__image {
-  float: right;
-  margin-left: 142px;
   max-width: 860px;
 }
 .tabs__desc {
+  flex: 1 1 auto;
   margin-bottom: 18px;
 }
 .tabs__paragraph {

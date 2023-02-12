@@ -15,106 +15,80 @@
 </head>
 <body>
   <header class="header display-flex">
-    <div class="header__left">
-      <a href="#" class="header__logo">
-        <img src="images/logo.svg" alt="">
-      </a>
-    </div>
-    <div class="header__right display-flex">
-      <nav class="header__nav nav" title="Main menu">
-        <ul class="nav__menu display-flex list-reset ">
-          <li class="nav__item">
-            <a href="#about" class="nav__link-item">
-              О&nbsp;нас
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link-item">
-              Проекты
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#advantages" class="nav__link-item">
-              Этапы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#accommodation" class="nav__link-item">
-              Отзывы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#blog" class="nav__link-item">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="search header__search">
-        <button class="btn btn-search btn-reset">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
-            <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
+    <a href="#" class="header__logo">
+      <img src="images/logo.svg" alt="">
+    </a>
+    <nav class="header__nav nav" title="Main menu">
+      <ul class="nav__menu display-flex list-reset ">
+        <li class="nav__item">
+          <a href="#about" class="nav__link-item">
+            О&nbsp;нас
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#services" class="nav__link-item">
+            Проекты
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#advantages" class="nav__link-item">
+            Этапы
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#accommodation" class="nav__link-item">
+            Отзывы
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#blog" class="nav__link-item">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="search header__search">
+      <button class="btn btn-search btn-reset">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
+          <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
+        </svg>
+      </button>
+      <form action="https://jsonplaceholder.typicode.com/posts" class="search__form display-flex" method="get">
+        <input name="s" type="text" class="search__input" placeholder="Что будем искать?">
+        <span class="search__close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30432)" fill="#CACACA"/>
+            <rect x="7.30469" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30469 15.5524)" fill="#CACACA"/>
+            <circle cx="12" cy="12" r="11" stroke="#CACACA" stroke-width="2"/>
           </svg>
-        </button>
-        <form action="https://jsonplaceholder.typicode.com/posts" class="search__form display-flex" method="get">
-          <input name="s" type="text" class="search__input" placeholder="Что будем искать?">
-          <span class="search__close">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30432)" fill="#CACACA"/>
-              <rect x="7.30469" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30469 15.5524)" fill="#CACACA"/>
-              <circle cx="12" cy="12" r="11" stroke="#CACACA" stroke-width="2"/>
-            </svg>
-          </span>
-        </form>
-      </div>
+        </span>
+      </form>
     </div>
 </header>
 <main class="main ">
   <div class="container">
     <section class="cover indents">
-      <ul class="cover__list list-reset">
-        <li class="cover__item">
+      <div class="cover__content display-flex">
+        <h1 class="cover__title">
+          Проектные решения любой сложности
+        </h1>
+        <div class="cover__desc">
+          Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
+        </div>
+        <button class="btn btn-orange cover__btn btn-reset">
+          Заказать расчёт
+        </button>
+      </div>
+      <ul class="cover__slides list-reset">
+        <li class="cover__slide">
           <img src="images/slides/slide_1.png" alt="Проектные решения любой сложности" class="cover__image">
-          <div class="cover__content display-flex">
-            <h1 class="cover__title">
-              Проектные решения любой сложности
-            </h1>
-            <div class="cover__desc">
-              Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
-            </div>
-            <button class="btn btn-orange cover__btn btn-reset">
-              Заказать расчёт
-            </button>
-          </div>
         </li>
-        <li class="cover__item hide">
+        <li class="cover__slide hide">
           <img src="images/slides/slide_2.png" alt="Проектные решения любой сложности" class="cover__image">
-          <div class="cover__content">
-            <h1 class="cover__title">
-              Проектные решения любой сложности
-            </h1>
-            <div class="cover__desc">
-              Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
-            </div>
-            <button class="btn cover__btn btn-reset">
-              Заказать расчёт
-            </button>
-          </div>
         </li>
-        <li class="cover__item hide">
+        <li class="cover__slide hide">
           <img src="images/slides/slide_3.png" alt="Проектные решения любой сложности" class="cover__image">
-          <div class="cover__content">
-            <h1 class="cover__title">
-              Проектные решения любой сложности
-            </h1>
-            <div class="cover__desc">
-              Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
-            </div>
-            <button class="btn cover__btn btn-reset">
-              Заказать расчёт
-            </button>
-          </div>
         </li>
       </ul>
       <ul class="cover__controls display-flex controls list-reset">
@@ -192,18 +166,22 @@
           </li>
         </ul>
         <div class="tabs__contents">
-          <div class="tabs__content" id="step_1">
-            <img src="images/step_1.png" alt="Проводим консультацию" class="tabs__image">
-            <h3 class="tabs__title">Проводим консультацию</h3>
-            <div class="tabs__desc">
-              <p class="tabs__paragraph">
-                Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.
-                А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
-              </p>
+          <div class="tabs__content display-flex" id="step_1">
+            <div class="tabs__content-left display-flex">
+              <h3 class="tabs__title">Проводим консультацию</h3>
+              <div class="tabs__desc">
+                <p class="tabs__paragraph">
+                  Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.
+                  А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
+                </p>
+              </div>
+              <div class="tabs__buttons">
+                <button class="tabs__btn btn btn-orange btn-reset">Подробнее</button>
+                <button class="tabs__btn btn btn-line btn-reset">Договор</button>
+              </div>
             </div>
-            <div class="tabs__buttons">
-              <button class="tabs__btn btn btn-orange btn-reset">Подробнее</button>
-              <button class="tabs__btn btn btn-line btn-reset">Договор</button>
+            <div class="tabs__content-right">
+              <img src="images/step_1.png" alt="Проводим консультацию" class="tabs__image">
             </div>
           </div>
           <div class="tabs__content" id="step_2">
@@ -221,7 +199,7 @@
     <section class="accordion section indents">
       <h2 class="section__title">Часто задаваемые вопросы</h2>
       <ul class="accordion__list display-flex list-reset">
-        <li class="accordion__item">
+        <li class="accordion__item" tabindex="0">
           <h3 class="accordion__title display-flex">
             <span class="accordion__link">Из&nbsp;чего формируется конечная стоимость проекта?</span>
             <span class="accordion__btn">
@@ -242,7 +220,7 @@
             </p>
           </div>
         </li>
-        <li class="accordion__item">
+        <li class="accordion__item" tabindex="0">
           <h3 class="accordion__title display-flex">
             <span class="accordion__link">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать&nbsp;/ реализовать?</span>
             <span class="accordion__btn">
@@ -252,7 +230,7 @@
           </h3>
           <div class="accordion__desc hide"></div>
         </li>
-        <li class="accordion__item">
+        <li class="accordion__item" tabindex="0">
           <h3 class="accordion__title display-flex">
             <span class="accordion__link">Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше отличие?</span>
             <span class="accordion__btn">
@@ -262,7 +240,7 @@
           </h3>
           <div class="accordion__desc hide"></div>
         </li>
-        <li class="accordion__item">
+        <li class="accordion__item" tabindex="0">
           <h3 class="accordion__title display-flex">
             <span class="accordion__link">Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;/ согласование с&nbsp;подрядчиком&nbsp;/ организацией?</span>
             <span class="accordion__btn">
@@ -272,7 +250,7 @@
           </h3>
           <div class="accordion__desc hide"></div>
         </li>
-        <li class="accordion__item">
+        <li class="accordion__item" tabindex="0">
           <h3 class="accordion__title display-flex">
             <span class="accordion__link">Могу&nbsp;ли я&nbsp;вернуть деньги на&nbsp;каком-либо из&nbsp;этапов работ?</span>
             <span class="accordion__btn">
