@@ -73,20 +73,17 @@
         <h1 class="cover__title">
           Проектные решения любой сложности
         </h1>
-        <div class="cover__desc">
+        <p class="cover__desc">
           Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
-        </div>
+        </p>
         <button class="btn btn-orange cover__btn btn-reset">
           Заказать расчёт
         </button>
       </div>
       <ul class="cover__slides list-reset">
-        <li class="cover__slide" style="background: url('images/slides/slide_1.png') no-repeat center / cover">
-        </li>
-        <li class="cover__slide hide" style="background: url('images/slides/slide_2.png') no-repeat center / cover">
-        </li>
-        <li class="cover__slide hide" style="background: url('images/slides/slide_2.png') no-repeat center / cover">
-        </li>
+        <li class="cover__slide cover__slide-first"></li>
+        <li class="cover__slide hide cover__slide-second"></li>
+        <li class="cover__slide hide cover__slide-third"></li>
       </ul>
       <ul class="cover__controls display-flex controls list-reset">
         <li class="controls__btn active">
@@ -142,29 +139,29 @@
       <div class="section__content">
         <ul class="tabs__list display-flex list-reset">
           <li class="tabs__item active">
-            <a href="#step_1" class="tabs__link">
+            <button class="tabs__link btn-reset">
               1 шаг
-            </a>
+            </button>
           </li>
           <li class="tabs__item">
-            <a href="#step_2" class="tabs__link">
+            <button class="tabs__link btn-reset">
               2 шаг
-            </a>
+            </button>
           </li>
           <li class="tabs__item">
-            <a href="#step_3" class="tabs__link">
+            <button class="tabs__link btn-reset">
               3 шаг
-            </a>
+            </button>
           </li>
           <li class="tabs__item">
-            <a href="#step_4" class="tabs__link">
+            <button class="tabs__link btn-reset">
               4 шаг
-            </a>
+            </button>
           </li>
         </ul>
         <div class="tabs__contents">
           <div class="tabs__content display-flex" id="step_1">
-            <div class="tabs__content-left display-flex">
+            <div class="tabs__content-left tabs__content-col display-flex">
               <h3 class="tabs__title">Проводим консультацию</h3>
               <div class="tabs__desc">
                 <p class="tabs__paragraph">
@@ -177,7 +174,7 @@
                 <button class="tabs__btn btn btn-line btn-reset">Договор</button>
               </div>
             </div>
-            <div class="tabs__content-right">
+            <div class="tabs__content-right tabs__content-col">
               <img src="images/step_1.png" alt="Проводим консультацию" class="tabs__image">
             </div>
           </div>
