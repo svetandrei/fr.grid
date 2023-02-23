@@ -86,10 +86,19 @@ closeSearch.addEventListener('click', function (){
 });
 
 
-let accordionTitle = document.querySelector('.accordion__title');
+let accordionTitle = document.querySelectorAll('.accordion__title');
 
-accordionTitle.addEventListener('click', function () {
-  this.classList.toggle('active');
-  this.nextElementSibling.classList.toggle('active');
-});
+accordionTitle.forEach((accordBtn) => {
+  accordBtn.addEventListener('click', function () {
+    if (!this.classList.contains('active')) {
+      accordionTitle.forEach((el) => {
+        el.classList.remove('active');
+        el.nextElementSibling.classList.remove('active');
+      });
+    }
+    this.classList.toggle('active');
+    this.nextElementSibling.classList.toggle('active');
+  });
+})
+
 
