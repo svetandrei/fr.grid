@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>База знаний</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script defer src="js/inputmask.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+<script>
+  const validate = new window.JustValidate('#form');
+</script>
+</body>
+  <div class="container display-flex">
+    <div class="checkbox block">
+      <div class="checkbox__title">Категории</div>
+         <ul class="checkbox__list list-reset">
+           <li class="checkbox__item">
+             <label for="checkbox__1" class="checkbox__label">
+                <input type="checkbox" id="checkbox__1" class="checkbox__input">
+                <span>Динозавры</span>
+             </label>
+           </li>
+           <li class="checkbox__item">
+             <label for="checkbox__2" class="checkbox__label">
+                <input type="checkbox" id="checkbox__2" class="checkbox__input">
+               <span>Медведи</span>
+             </label>
+           </li>
+           <li class="checkbox__item">
+             <label for="checkbox__3" class="checkbox__label">
+               <input type="checkbox" id="checkbox__3" class="checkbox__input">
+               <span>Косули</span>
+             </label>
+           </li>
+           <li class="checkbox__item">
+             <label for="checkbox__4" class="checkbox__label">
+                <input type="checkbox" id="checkbox__4" class="checkbox__input">
+               <span>Лисы</span>
+             </label>
+           </li>
+           <li class="checkbox__item">
+             <label for="checkbox__5" class="checkbox__label">
+                 <input type="checkbox" id="checkbox__5" class="checkbox__input">
+                 <span>Волки</span></label>
+           </li>
+           <li class="checkbox__item">
+             <label for="checkbox__6" class="checkbox__label">
+                <input type="checkbox" id="checkbox__6" class="checkbox__input">
+                <span>Олени и лоси</span>
+             </label>
+           </li>
+         </ul>
+     </div>
+      <div class="select block">
+        <select name="select" id="select__item">
+          <option>Материал</option>
+          <option>Древесина</option>
+          <option>Метал</option>
+          <option>Камень</option>
+          <option>Пластик</option>
+          <option>Композитный</option>
+          <option>Гипс</option>
+        </select>
+      </div>
+      <div class="yandex block">
+        <div id="map" style="width: 460px; height: 460px"></div>
+      </div>
+      <div class="scroll-bar block">
+        <div id="simple-bar">Сложно сказать, почему многие известные личности представлены в&nbsp;исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для первоочередных требований.</div>
+      </div>
+      <div class="form block">
+        <div class="form__inputs">
+          <form action="" method="post" id="form">
+            <div class="form__input-control">
+              <input name="name" type="text" id="name" class="form__input" placeholder="Имя*" required/>
+            </div>
+            <div class="form__input-control">
+              <input name="phone" type="tel" id="phone" class="form__input" placeholder="Телефон*" required/>
+            </div>
+            <div class="form__input-control">
+              <input name="email" type="text" id="email" class="form__input" placeholder="E-mail*" required/>
+            </div>
+            <button class="form__button btn-reset" type="submit">Заказать</button>
+          </form>
+        </div>
+      </div>
+      <div class="tooltip-block block">
+        <div class="tooltip__text">
+          Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+          <div class="tooltip">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" />
+            </svg>
+            <div class="top">
+              Глава 2, страница 176 wefdwedf
+              <i></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+
+      var myMap = new ymaps.Map("map", {
+        center: [48.872185, 2.354224],
+        zoom: 12
+      });
+
+      var myPlacemark = new ymaps.Placemark([48.872185, 2.354224], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'images/icon_map.svg',
+        iconImageSize: [28, 40],
+        iconImageOffset: [-3, -42]
+      });
+
+      // Размещение геообъекта на карте.
+      myMap.geoObjects.add(myPlacemark);
+    }
+
+  </script>
+</body>
+</html>
